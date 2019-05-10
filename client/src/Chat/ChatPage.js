@@ -11,7 +11,7 @@ class ChatPage extends Component {
         super(props);
         this.state = {
             messages: [],
-            socket: openSocket("http://localhost:8080")
+            socket: openSocket("https://ancient-temple-83318.herokuapp.com/")
         };
 
         this.state.socket.on("new-message", (message) => {
